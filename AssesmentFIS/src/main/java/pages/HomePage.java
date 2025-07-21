@@ -8,10 +8,10 @@ import org.openqa.selenium.support.PageFactory;
 public class HomePage {
     WebDriver driver;
 
-    @FindBy(id = "gh-ac")
+    @FindBy(xpath="//input[@id=\"gh-ac\"]")
     WebElement searchBox;
 
-    @FindBy(id = "gh-btn")
+    @FindBy(xpath = "//input[@id=\"gh-btn\"]")
     WebElement searchButton;
 
     public HomePage(WebDriver driver) {
